@@ -1,0 +1,14 @@
+.sidebar{
+     position: fixed;
+     width: 250px;
+     height: 100%;
+     left: 0;
+     background-color: rgba(31, 35, 88, 0.151);
+}
+.sidebar>.menu>ul>.menu-item:hover{
+    background-color: #ababab;
+}
+.sidebar>.menu>ul>.menu-item:hover>a{
+    display: block;
+    padding: 15px 20px;
+}

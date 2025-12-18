@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kartu Mahasiswa UNDHARI</title>
+
+<style>
+    body{
+        margin:0;
+        padding:0;
+        background:#333;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+        font-family:Arial, sans-serif;
+    }
+
+    .card{
+        width:1000px;
+        height:650px;
+        background:linear-gradient(180deg,#ff9ad0,#ffe6f3);
+        border-radius:40px;
+        overflow:hidden;
+        position:relative;
+        box-shadow:0 10px 35px rgba(0,0,0,0.45);
+        border:6px solid #ffffffaa;
+    }
+
+    /* HEADER */
+    .top{
+        display:flex;
+        align-items:center;
+        padding:18px 28px;
+    }
+
+    .logo{
+        width:90px;
+        height:90px;
+        border-radius:50%;
+        background:white;
+        border:4px solid #b3004c;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-size:28px;
+        font-weight:bold;
+        color:#b3004c;
+        margin-right:10px;
+    }
+
+    .title{
+        flex:1;
+        text-align:center;
+    }
+
+    .title h1{
+        margin:0;
+        font-size:32px;
+        font-weight:800;
+        color:#4d0033;
+    }
+
+    .title h2{
+        margin:4px 0 0;
+        font-size:20px;
+        font-weight:700;
+        color:#4d0033;
+    }
+
+    .address{
+        width:100%;
+        text-align:center;
+        margin-top:4px;
+        padding-bottom:6px;
+        font-size:16px;
+        font-weight:bold;
+        color:#4d0033;
+        border-bottom:3px solid #4d0033;
+    }
+
+    /* WATERMARK */
+    .watermark{
+        position:absolute;
+        top:48%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        font-size:120px;
+        font-weight:800;
+        color:#ffffff55;
+    }
+
+    /* CONTENT */
+    .content{
+        padding:20px 30px;
+        display:flex;
+    }
+
+    .left{
+        width:55%;
+    }
+
+    .left h3{
+        font-size:20px;
+        margin-bottom:8px;
+        font-weight:800;
+        color:#4d0033;
+    }
+
+    .left .nama{
+        font-size:26px;
+        font-weight:900;
+        color:#000;
+    }
+
+    .left .prodi{
+        font-size:34px;
+        font-weight:900;
+        color:#000;
+        margin-top:2px;
+    }
+
+    .left .nim{
+        font-size:28px;
+        font-weight:800;
+        margin-top:5px;
+        color:#000;
+    }
+
+    .qr{
+        width:140px;
+        height:130px;
+        background:white;
+        border:6px solid #b3004c;
+        margin-top:20px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    /* FOTO */
+    .right{
+        width:45%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        padding-top:10px;
+    }
+
+    .photo{
+        width:200px;
+        height:230px;
+        border-radius:12px;
+        overflow:hidden;
+        border:6px solid white;
+        box-shadow:0 10px 20px rgba(0,0,0,0.35);
+    }
+
+    .photo img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+    }
+
+    /* FOOTER */
+    .footer{
+        position:absolute;
+        bottom:0;
+        width:100%;
+        padding:18px;
+        background:#ff8cc6;
+        text-align:center;
+        font-weight:900;
+        font-size:26px;
+        color:#4d0033;
+    }
+
+    .footer small{
+        display:block;
+        font-size:18px;
+        margin-top:4px;
+        font-style:italic;
+        color:#4d0033;
+    }
+</style>
+</head>
+<body>
+
+<div class="card">
+    <div class="top">
+        <div class="logo"><logo.yaak.jpg"data:image/png;base64,lHQl2uG1jtxnw5bC7AKBUQnOz6neiAY+vdEzUU0Huaa4kFGSj9XKD65W2QO+lQFn..." style="width:100%;height:100%;object-fit:cover;border-radius:50%;"></div>
+        <div class="logo"><Logo_Universitas_Dharmas_Indonesia.jpg="data:image/png;base64,TgGwdy3v9jxdeX2PZLecm/RGD9y+6A/R/W4YW1Vj7VVwAAAABJRU5ErkJggg==" style="width:100%;height:100%;object-fit:cover;border-radius:50%;"></div>
+        <div class="title">
+            <h1>YAYASAN AMANAH AMPANG KURANJI</h1>
+            <h2>UNIVERSITAS DHARMAS INDONESIA</h2>
+        </div>
+        <div style="width:90px"></div>
+    </div>
+
+    <div class="address">Jl. Lintas Sumatera km. 18, Kec. Koto Baru, Dharmasraya - Sumatera Barat</div>
+
+    <div class="watermark"></div>
+
+    <div class="content">
+        <div class="left">
+            <h3>Kartu Tanda Mahasiswa</h3>
+            <div class="nama">MEILIYANI ASLAMIAH</div>
+            <div class="prodi">S1 TEKNIK INFORMATIKA</div>
+            <div class="nim">2302011012</div>
+
+            <div class="qr">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=2302011008" width="170">
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="photo">
+                <img src="foto.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        BERPACU WAKTU MENJAGA MUTU
+        <small>JAYALAH UNDHARI</small>
+    </div>
+</div>
+
+</body>
+</html>
